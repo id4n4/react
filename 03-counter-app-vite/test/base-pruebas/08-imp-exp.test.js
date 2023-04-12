@@ -46,7 +46,6 @@ describe('Pruebas en 08-imp-exp', () => {
     test('getHeroesByOwner debe retornar un arreglo con los héroes de DC', () => {
         const universe = 'DC'
         const heroes = getHeroesByOwner(universe)
-        console.log(heroes)
         expect(heroes.length).toBe(3)
     });
 });
