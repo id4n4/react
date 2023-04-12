@@ -17,7 +17,8 @@ function FirstApp({ title, subtitle, name}) {
             {/* <code>{JSON.stringify(obj)}</code>
             <h1>{getTitle()}</h1>
             <p>{obj.text}</p> */}
-            <h1>{ title }</h1>
+            <h1 data-testid="test-title">{ title }</h1>
+            <p>{ subtitle }</p>
             <p>{ subtitle }</p>
             <p>{ name }</p>
         </Fragment>
@@ -26,10 +27,12 @@ function FirstApp({ title, subtitle, name}) {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number
+    subtitle: PropTypes.string,
+    name: PropTypes.string
 }
 FirstApp.defaultProps = {
     // title: "Hola mundo",
-    subtitle: 1234
+    subtitle: "1234",
+    name: "Juan"
 }
 export default FirstApp
