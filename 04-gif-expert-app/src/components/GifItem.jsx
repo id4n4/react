@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types'
 
-function GifItem({id,title,url}) {
+export function GifItem({id,title,url}) {
   return (
     <div className='card'>
         <img src={url} alt={title} />
