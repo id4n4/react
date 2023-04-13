@@ -8,8 +8,14 @@ export const SimpleForm = () => {
     })
     const {username, email} = formState
 
-    const onInputChange = (event) => {
-
+    const onInputChange = ({target}) => {
+        let obj = {
+            ...formState
+        }
+        obj[target.name] = target.value
+        console.log(obj)
+        setFormState(obj)
+        
     }
     return (
         <>
@@ -30,6 +36,7 @@ export const SimpleForm = () => {
                 placeholder='username@gmail.com'
                 name='email'
                 value={email}
+                onChange={onInputChange}
             />
         </>
     )
