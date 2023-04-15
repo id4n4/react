@@ -14,7 +14,7 @@ export const useRickAndMorty = (parameters) => {
             isLoading: true
         })
         const resp = await rickandmortyapi.get(parameters)
-        console.log(resp.data.results)
+        console.log(resp.data)
         setstate({
             data: resp.data.results,
             isLoading: false,
