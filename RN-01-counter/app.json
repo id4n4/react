@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "RN-01-counter",
+    "slug": "RN-01-counter"
+  }
+}
