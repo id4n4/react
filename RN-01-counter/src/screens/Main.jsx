@@ -1,19 +1,23 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
+import { btnStyles } from '../utils/styles/button'
+import { ListCounter } from '../components/ListCounter'
+import { useCounter } from '../../app/Provider'
 
-export const Main = () => {
+const Main = () => {
+  const { counters, addcounter } = useCounter()
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
-      <TouchableOpacity style={theStyles.button}>
-        <Text> Agregar Counter </Text>
-      </TouchableOpacity>
+    <View>
+      <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
+        <TouchableOpacity
+          style={btnStyles.button}
+          onPress={addcounter}
+        >
+          <Text> Agregar Counter </Text>
+        </TouchableOpacity>
+      </View>
+      <ListCounter counters={counters} />
     </View>
   )
 }
 
-const theStyles = StyleSheet.create({
-  button: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10
-  }
-})
+export default Main

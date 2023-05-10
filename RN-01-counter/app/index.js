@@ -1,6 +1,6 @@
 import { Stack } from 'expo-router'
 import { SafeAreaView } from 'react-native'
-import { Main } from '../src/screens/main'
+import Main from '../src/screens/Main'
 
 const index = () => {
   return (
