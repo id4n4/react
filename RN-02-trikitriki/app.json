@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "RN-02-trikitriki",
+    "slug": "RN-02-trikitriki"
+  }
+}
