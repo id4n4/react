@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router'
-import { Provider } from './Provider'
+import { Provider } from './Provider',
 
 const Layout = () => {
   return (

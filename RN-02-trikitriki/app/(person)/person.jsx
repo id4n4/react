@@ -1,13 +1,13 @@
 import React from 'react'
-import GameVsIa from '../../src/screens/GameVsIa'
 import Header from '../../src/components/Header'
 import { stHeader } from '../../src/utils/styles/stHeader'
 import { useSelector } from 'react-redux'
 import { Stack, useRouter } from 'expo-router'
 import { SafeAreaView, TouchableOpacity } from 'react-native'
+import GameVsPerson from '../../src/screens/GameVsPerson'
 import { AntDesign } from '@expo/vector-icons'
 
-const ia = () => {
+const person = () => {
   const theme = useSelector((state) => state)
   const router = useRouter()
   return (
@@ -34,9 +34,9 @@ const ia = () => {
       }}
       />
       <Header />
-      <GameVsIa />
+      <GameVsPerson />
     </SafeAreaView>
   )
 }
 
-export default ia
+export default person

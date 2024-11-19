@@ -45,6 +45,7 @@ const Menu = () => {
             ...stMenu.btn,
             backgroundColor: theme.color.button
           }}
+          onPress={() => router.push('/person')}
         >
           <Text
             style={{
